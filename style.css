@@ -1,0 +1,1036 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body, html {
+    height: 100%;
+    width: 100%;
+}
+
+@font-face {
+    font-family: all;
+    src: url("./AVANTN.ttf");
+}
+
+.main {
+    height: 100%;
+    width: 100%;
+
+}
+
+.content {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: #0D0D0D;
+    flex-direction: column;
+    color: #aca59b
+}
+
+.content h1 {
+    font-size: 7rem;
+    font-weight: 700;
+    font-family: all;
+    text-transform: uppercase;
+}
+
+.top svg{
+    position: fixed;
+    left: 6rem;
+    z-index: 9999;
+}
+.top h2 {
+    font-family: all;
+    font-size: 2.2rem;
+    letter-spacing: 0.4rem;
+    position: fixed;
+    right:4rem;
+    z-index: 9999;
+}
+
+.header {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.header h2 {
+    font-family: all;
+    font-size: 2.2rem;
+    letter-spacing: 0.4rem;
+    color: #c0b7aa
+}
+
+.first {
+    height: 7rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-left: 1rem;
+    overflow: hidden;
+
+}
+
+.first h1 {
+    transition: all ease 0.4s;
+}
+
+.second {
+
+    height: 7rem;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding-left: 1.2rem;
+    overflow: hidden;
+}
+
+.second h1 {
+    transition: all ease 0.4s;
+    color:#f0431c;
+}
+
+.third {
+
+    height: 9rem;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    overflow: hidden;
+    padding-left: 2rem;
+}
+
+.third h1 {
+    transition: all ease 0.4s;
+}
+
+.first:hover h1 {
+    transform: translateY(-100%);
+}
+
+.second:hover h1 {
+    transform: translateY(-100%);
+}
+
+.third:hover h1 {
+    transform: translateY(-100%);
+} 
+.aboutme{
+    background-color: #0D0D0D;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100%;
+    width: 100%;
+   padding-top: 10rem;
+}
+.aboutmecontent{
+    height: 100%;
+    width: 60%;
+    color: #aca59b;  
+} 
+.aboutme h2{
+    font-family: all;
+    font-size: 1.2rem;
+    letter-spacing: 0.4rem;
+    text-transform: uppercase;
+    font-weight: 600;
+    margin-bottom: 2rem;
+}
+.aboutme h1{
+    font-family: all;
+    font-size: 4rem;
+    letter-spacing: 0.4rem;
+    text-transform: uppercase;
+    font-weight: bolder; 
+}
+.aboutme-middle{
+   
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.skills{
+    background-color: #0D0D0D;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100%;
+    width: 100%;
+   padding-top: 15rem;
+}
+.skills-content{
+    height: 100%;
+    width: 100%;
+    color: #aca59b;
+    position: relative;
+}
+.skills-content h2{
+    font-family: all;
+    font-size: 2rem;
+    letter-spacing: 0.4rem;
+    text-transform: uppercase;
+    font-weight: 600;
+    margin-bottom: 2rem;
+    margin-left: 19rem;
+}
+.skills-content h1{
+    font-family: all;
+    font-size: 6rem;
+    letter-spacing: 0.4rem;
+    text-transform: uppercase;
+    font-weight: bolder; 
+    margin-left: 18.5rem;
+} 
+.frontend{
+    width: 100%;
+    border-bottom: 0.1rem solid   #423f3b;
+    border-top: 0.1rem  solid #423f3b;
+  
+}
+.backend{
+    width: 100%;
+    border-bottom: 0.1rem solid   #423f3b;
+    border-top: 0.1rem  solid #423f3b;
+}
+.database{
+    width: 100%;
+    border-bottom: 0.1rem solid   #423f3b;
+    border-top: 0.1rem  solid #423f3b;
+}
+.dsa{
+    width: 100%;
+    border-bottom: 0.1rem solid   #423f3b;
+    border-top: 0.1rem  solid #423f3b;
+}
+.frontend1{
+    position: absolute;
+    top:4.5rem;
+    background-color: #f0431c;
+    color:#0D0D0D;
+    width: 100%;
+    transform: scaleY(0%);
+    transform-origin: center center;
+    transition: all ease 0.4s;
+}
+.overlay1{
+    position: absolute;
+    top:4.5rem;
+    background-color:transparent;
+    width: 100%;
+}
+.overlay1 h1{
+   opacity: 0;
+}
+.backend1{
+    position: absolute;
+    top:11.76rem;
+    background-color: #f0431c;
+    color:#0D0D0D;
+    width: 100%;
+    transform: scaleY(0%);
+    transform-origin: center center;
+    transition: all ease 0.4s;
+}
+.overlay2{
+    position: absolute;
+    top:11.76rem;
+    background-color:transparent;
+    width: 100%;
+}
+.overlay2 h1{
+   opacity: 0; 
+}
+.database1{
+    position: absolute;
+    top:19rem;
+    background-color: #f0431c;
+    color:#0D0D0D;
+    width: 100%;
+    transform: scaleY(0%);
+    transform-origin: center center;
+    transition: all ease 0.4s;
+}
+.overlay3{
+    position: absolute;
+    top:19rem;
+    background-color:transparent;
+    width: 100%;
+}
+.overlay3 h1{
+   opacity: 0;
+}
+.dsa1{
+    position: absolute;
+   top:26.3rem;
+    background-color: #f0431c;
+    color:#0D0D0D;
+    width: 100%;
+    transform: scaleY(0%);
+    transform-origin: center center;
+    transition: all ease 0.4s;
+}
+.overlay4{
+    position: absolute;
+    top:26.3rem;
+    background-color:transparent;
+    width: 100%;
+}
+.overlay4 h1{
+   opacity: 0;
+}
+.project{
+    background-color: #0D0D0D;
+    height: 100%;
+    width: 100%;
+    padding-top: 5rem;
+    overflow: hidden;
+}
+.projectcontent{
+    width: 100%;
+    height: 100%;
+    color: #aca59b; 
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-direction: column;
+    position: relative;
+}
+.pro1{
+    width: 100%;
+    border-bottom: 0.1rem solid   #423f3b;
+    border-top: 0.1rem  solid #423f3b;
+}
+.pro1 h1{
+    font-family: all;
+    font-size: 6rem;
+    letter-spacing: 0.4rem;
+    text-transform: uppercase;
+    font-weight: bolder; 
+    margin-left: 18.5rem;
+} 
+.pro2{
+    width: 100%;
+    border-bottom: 0.1rem solid   #423f3b;
+    border-top: 0.1rem  solid #423f3b;
+}
+.pro2 h1{
+    font-family: all;
+    font-size: 6rem;
+    letter-spacing: 0.4rem;
+    text-transform: uppercase;
+    font-weight: bolder; 
+    margin-left: 18.5rem;
+} 
+.projectcontent h2{
+    font-family: all;
+    font-size: 2rem;
+    letter-spacing: 0.4rem;
+    text-transform: uppercase;
+    font-weight: 600;
+    margin-right: 45rem;
+}
+.overlaypro1{
+    height: 23rem;
+    width:23rem;
+    padding: 1rem 1rem;
+    position: absolute;
+    background: #f0431c;
+    border-radius: 1rem;
+    box-shadow: 5px 5px 30px #f0431c;
+    opacity: 0;
+}
+.overlaypro1 h2{
+    font-family: all;
+    font-size: 1.5rem;
+    letter-spacing: 0.2rem;
+    text-transform: uppercase;
+    font-weight: 600;
+    color: #000000;
+    margin-top:1.2rem;
+    margin-bottom: 1.7rem;
+}
+.overlaypro1 h1{
+    font-family: all;
+    font-size: 2.5rem;
+    letter-spacing: 0.2rem;
+    text-transform: uppercase;
+    font-weight: bolder; 
+    color: black;
+}
+.laypro1{
+    width: 100%;
+    position: absolute;
+    top:13.6rem;
+    background: transparent;
+}
+.laypro1 h1{
+    font-family: all;
+    font-size: 6rem;
+    letter-spacing: 0.4rem;
+    text-transform: uppercase;
+    font-weight: bolder; 
+    margin-left: 18.5rem;
+    opacity: 0;
+}
+.overlaypro2{
+    height: 21rem;
+    width:21rem;
+    padding: 1rem 1rem;
+    position: absolute;
+    background: #f0431c;
+    border-radius: 1rem;
+    box-shadow: 5px 5px 30px #f0431c;
+    opacity: 0;
+    top:22rem;
+
+}
+.overlaypro2 h2{
+    font-family: all;
+    font-size: 1.5rem;
+    letter-spacing: 0.2rem;
+    text-transform: uppercase;
+    font-weight: 600;
+    color: black;
+    margin-top:1.2rem;
+    margin-bottom: 1.7rem;
+}
+.overlaypro2 h1{
+    font-family: all;
+    font-size: 2.5rem;
+    letter-spacing: 0.2rem;
+    text-transform: uppercase;
+    font-weight: bolder; 
+    color:black;
+}
+.laypro2{
+    top:26rem;
+    width: 100%;
+    position: absolute;
+    background: transparent;
+   
+}
+.laypro2 h1{
+    font-family: all;
+    font-size: 6rem;
+    letter-spacing: 0.4rem;
+    text-transform: uppercase;
+    font-weight: bolder; 
+    margin-left: 18.5rem;
+    opacity: 0;
+}
+.achievement{
+    background-color: #0D0D0D;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100%;
+    width: 100%;
+   padding-top: 15rem;
+}
+.achievementcontent{
+    height: 100%;
+    width: 100%;
+    color: #aca59b;
+    position: relative;
+  
+}
+.achievementcontent h2{
+font-family: all;
+font-size: 2rem;
+letter-spacing: 0.4rem;
+text-transform: uppercase;
+font-weight: 600;
+margin-bottom: 2rem;
+margin-left: 19rem;
+}
+.achievementcontent h1{
+    font-family: all;
+    font-size: 6rem;
+    letter-spacing: 0.4rem;
+    text-transform: uppercase;
+    font-weight: bolder; 
+    margin-left: 18.5rem;
+    margin-top: 5rem;
+    margin-bottom: 5rem;
+}
+.Codechef{
+    width: 100%;
+    border-bottom: 0.1rem solid   #423f3b;
+    border-top: 0.1rem  solid #423f3b;
+}
+.Codechef1{
+    position: absolute;
+    top:4.5rem;
+    background-color: #f0431c;
+    color:#0D0D0D;
+    width: 100%;
+    transform: scaleY(0%);
+    transform-origin: center center;
+    transition: all ease 0.4s;
+}
+.Codechef1 h2{
+    font-family: all;
+    font-size: 3.7rem;
+    letter-spacing: 0.3rem;
+    text-transform: uppercase;
+    font-weight: bolder; 
+    margin-left: 18.5rem;
+    margin-top: 3rem;
+
+}
+.overlaycc1{
+    position: absolute;
+    top:4.5rem;
+    background-color:transparent;
+    width: 100%;
+}
+.overlaycc1 h1{
+    opacity: 0;
+    font-family: all;
+    font-size: 5.9rem;
+    letter-spacing: 0.4rem;
+    text-transform: uppercase;
+    font-weight: bolder;
+}
+.Event{
+    margin-top: 2rem;
+    width: 100%;
+    border-bottom: 0.1rem solid   #423f3b;
+    border-top: 0.1rem  solid #423f3b;
+}
+.Event1{
+    position: absolute;
+    top:23.8rem;
+    background-color: #f0431c;
+    color:#0D0D0D;
+    width: 100%;
+    transform: scaleY(0%);
+    transform-origin: center center;
+    transition: all ease 0.4s;
+}
+.Event1 h2{
+    font-family: all;
+    font-size: 4.6rem;
+    letter-spacing: 0.3rem;
+    text-transform: uppercase;
+    font-weight: 100; 
+    margin-left: 18.5rem;
+    margin-top: 4rem;
+}
+.overlaye1{
+    position: absolute;
+    top:21.7rem;
+   background:transparent;
+    width: 100%;
+}
+.overlaye1 h1{
+    opacity: 0;
+    font-family: all;
+    font-size: 7.6rem;
+    letter-spacing: 0.4rem;
+    text-transform: uppercase;
+    font-weight: bolder; 
+}
+@media (max-width:600px) {
+    .content {
+        height: 100%;
+        width: 100%;
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        background-color: #0D0D0D;
+        flex-direction: column;
+        color: #aca59b
+    }
+
+    .content h1 {
+        font-size: 3.5rem;
+        font-weight: 700;
+        font-family: all;
+        text-transform: uppercase;
+        
+    }
+    .top{
+        position: fixed;
+        background-color: #0D0D0D;
+        width: 100%;
+        height: 5rem;
+        top:0rem;
+        z-index:9999
+    }
+    .top svg{
+        left: 2rem;
+        top:1rem;
+    }
+    .top h2 {
+        font-family: all;
+        font-size: 2.2rem;
+        letter-spacing: 0.4rem;
+        right:1rem;
+        top:1.5rem;
+    }
+
+    .main :nth-child(4) {
+        color: #EB5939;
+    }
+
+    .header {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding-left: 1.7rem;
+    }
+
+    .header h2 {
+        font-family: all;
+        font-size: 2rem;
+        margin-top: 2.3rem;
+    }
+
+    .first {
+
+        height: 3.6rem;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        overflow: hidden;
+
+    }
+
+    .first h1 {
+        transition: all ease 0.4s;
+    }
+
+    .second {
+
+        height: 3.6rem;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        overflow: hidden;
+    }
+
+    .second h1 {
+        transition: all ease 0.4s;
+    }
+
+    .third {
+
+        height: 3.6rem;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        overflow: hidden;
+        padding-right: 1.2rem;
+    }
+
+    .third h1 {
+        transition: all ease 0.4s;
+    }
+
+    .first:hover h1 {
+        transform: translateY(-100%);
+    }
+
+    .second:hover h1 {
+        transform: translateY(-100%);
+    }
+
+    .third:hover h1 {
+        transform: translateY(-100%);
+    }
+    .aboutme{
+        background-color: #0D0D0D;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        min-height: 100%;
+        width: 100%;
+        padding-top: 5rem;
+    }
+    .aboutmecontent{
+        height: 100%;
+        width: 100%;
+        color: #aca59b;
+        padding: 0 2rem;  
+    } 
+    .aboutme h2{
+        font-family: all;
+        font-size: 1.2rem;
+        letter-spacing: 0.4rem;
+        text-transform: uppercase;
+        font-weight: 600;
+        margin-bottom: 2rem;
+    }
+    .aboutme h1{
+        font-family: all;
+        font-size: 2.5rem;
+        text-transform: uppercase;
+        font-weight: bolder; 
+        letter-spacing: 0rem;
+    }
+    .aboutme-middle{
+     
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+    }
+    .skills{
+        background-color: #0D0D0D;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        min-height: 100%;
+        width: 100%;
+       padding-top: 1rem;
+    }
+    .skills-content{
+        height: 100%;
+        width: 100%;
+        color: #aca59b;
+        position: relative;
+    }
+    .skills-content h2{
+        font-family: all;
+        font-size: 1.8rem;
+        letter-spacing: 0.4rem;
+        text-transform: uppercase;
+        font-weight: 600;
+        margin-bottom: 2rem;
+        margin-left:2rem ;
+    }
+    .skills-content h1{
+        font-family: all;
+        font-size: 3.3rem;
+        text-transform: uppercase;
+        font-weight: bolder; 
+        letter-spacing: 0.1rem;
+        margin-left:1.8rem;
+    } 
+    .frontend1{
+        position: absolute;
+        top:4.2rem;
+        background-color: #f0431c;
+        color:#0D0D0D;
+        width: 100%;
+        transform: scaleY(0%);
+        transform-origin: center center;
+        transition: all ease 0.4s;
+    }
+    .overlay1{
+        position: absolute;
+        top:4.2rem;
+        background-color:transparent;
+        width: 100%;
+    }
+    .overlay1 h1{
+       opacity: 0;
+    }
+    .backend1{
+        position: absolute;
+        top:8.3rem;
+        background-color: #f0431c;
+        color:#0D0D0D;
+        width: 100%;
+        transform: scaleY(0%);
+        transform-origin: center center;
+        transition: all ease 0.4s;
+    }
+    .overlay2{
+        position: absolute;
+        top:8.3em;
+        background-color:transparent;
+        width: 100%;
+    }
+    .overlay2 h1{
+       opacity: 0; 
+    }
+    .database1{
+        position: absolute;
+        top:12.4rem;
+        background-color: #f0431c;
+        color:#0D0D0D;
+        width: 100%;
+        transform: scaleY(0%);
+        transform-origin: center center;
+        transition: all ease 0.4s;
+    }
+    .overlay3{
+        position: absolute;
+        top:12.4rem;
+        background-color:transparent;
+        width: 100%;
+    }
+    .overlay3 h1{
+       opacity: 0;
+    }
+    .dsa1{
+        position: absolute;
+       top:16.5rem;
+        background-color: #f0431c;
+        color:#0D0D0D;
+        width: 100%;
+        transform: scaleY(0%);
+        transform-origin: center center;
+        transition: all ease 0.4s;
+    }
+    
+    .overlay4{
+        position: absolute;
+        top:16.5rem;
+        background-color:transparent;
+        width: 100%;
+    }
+    .overlay4 h1{
+       opacity: 0;
+    }
+    .project{
+        background-color: #0D0D0D;
+         height: 100%;
+        width: 100%;
+        padding-top: 0rem;
+    
+    }
+    .projectcontent{
+        width: 100%;
+        height: 100%;
+        color: #aca59b; 
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        flex-direction: column;
+        position: relative;
+    }
+    .pro1{
+        width: 100%;
+        border-bottom: 0.1rem solid   #423f3b;
+        border-top: 0.1rem  solid #423f3b;
+    }
+    .projectcontent h2{
+        font-family: all;
+        font-size: 2rem;
+        letter-spacing: 0.5rem;
+        text-transform: uppercase;
+        font-weight: 600;
+        margin-right:4rem;
+    }
+    .pro1 h1{
+        font-family: all;
+        font-size: 3rem;
+        text-transform: uppercase;
+        font-weight: bolder; 
+        letter-spacing: 0rem;
+        margin-left:1.2rem;
+    }
+    .pro2{
+        width: 100%;
+        border-bottom: 0.1rem solid   #423f3b;
+        border-top: 0.1rem  solid #423f3b;
+    }
+    .pro2 h1{
+        font-family: all;
+        font-size: 15vw;
+        text-transform: uppercase;
+        font-weight: bolder; 
+        letter-spacing: 0rem;
+        margin-left:1.2rem;
+    } 
+    .overlaypro1{
+        height: 15rem;
+        width:15rem;
+        padding: 1rem 1rem;
+        position: absolute;
+        background: #b3afa9;
+        border-radius: 1rem;
+        box-shadow: 5px 5px 30px #b3afa9;
+        opacity: 0;
+        
+    }
+    .overlaypro1 h2{
+        font-family: all;
+        font-size: 1rem;
+        letter-spacing: 0.3rem;
+        text-transform: uppercase;
+        font-weight: 600;
+        color: #423f3b;
+        margin-top: 1.7rem;;
+        margin-bottom: 1.3rem;
+    }
+    .overlaypro1 h1{
+        font-family: all;
+        font-size: 1.5rem;
+        letter-spacing: 0.3rem;
+        text-transform: uppercase;
+        font-weight: bolder; 
+        color: tomato;
+    }
+    .laypro1{
+        width: 100%;
+        position: absolute;
+        top:40vh;
+        background:transparent;
+    }
+    .laypro1 h1{
+        font-family: all;
+        font-size: 15vw;
+        text-transform: uppercase;
+        font-weight: bolder; 
+        letter-spacing: 0rem;
+        margin-left:1.2rem;
+    }
+    .overlaypro2{
+        height: 15rem;
+        width:15rem;
+        padding: 1rem 1rem;
+        position: absolute;
+        background: #b3afa9;
+        border-radius: 1rem;
+        box-shadow: 5px 5px 30px #b3afa9;
+        opacity: 0;
+    
+    }
+    .overlaypro2 h2{
+        font-family: all;
+        font-size: 1rem;
+        letter-spacing: 0.3rem;
+        text-transform: uppercase;
+        font-weight: 600;
+        color: #423f3b;
+        margin-top: 1.7rem;;
+        margin-bottom: 1.3rem;
+    }
+    .overlaypro2 h1{
+        font-family: all;
+        font-size: 1.5rem;
+        letter-spacing: 0.3rem;
+        text-transform: uppercase;
+        font-weight: bolder; 
+        color: tomato;
+    }
+    .laypro2{    
+        width: 100%;
+        position: absolute;
+        top:74vh;
+        background: transparent;
+    }
+    .laypro2 h1{
+        font-family: all;
+        font-size: 3rem;
+        text-transform: uppercase;
+        font-weight: bolder; 
+        letter-spacing: 0rem;
+        margin-left:1.2rem;
+    }
+    .achievement{
+        background-color: #0D0D0D;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        min-height: 100%;
+        width: 100%;
+       padding-top:0rem;
+       padding-bottom: 2rem;
+    }
+    .achievementcontent{
+        height: 100%;
+        width: 100%;
+        color: #aca59b;
+       position: relative;
+    }
+    .achievementcontent h2{
+        font-family: all;
+        font-size: 1.8rem;
+        letter-spacing: 0.4rem;
+        text-transform: uppercase;
+        font-weight: 600;
+        margin-bottom: 2rem;
+        margin-left:2rem ;
+    }
+    .achievementcontent h1{
+        font-family: all;
+        font-size: 3.3rem;
+        text-transform: uppercase;
+        font-weight: bolder; 
+        letter-spacing: 0.1rem;
+        margin-left:1.8rem;
+       
+    }
+    .Codechef{
+        width: 100%;
+        border-bottom: 0.1rem solid   #423f3b;
+        border-top: 0.1rem  solid #423f3b;
+    }
+    .Codechef1{
+        position: absolute;
+        top:4.2rem;
+        background-color: #f0431c;
+        color:#0D0D0D;
+        width: 100%;
+        transform: scaleY(0%);
+        transform-origin: center center;
+        transition: all ease 0.4s;
+    }
+    .Codechef1 h2{
+        font-family: all;
+        font-size: 1.3rem;
+        letter-spacing: 0.3rem;
+        text-transform: uppercase;
+        font-weight: bolder; 
+        margin-left: 1rem; 
+        margin-top: 3.5rem;
+    }
+    .overlaycc1{
+        position: absolute;
+        top:4.3rem;
+        background: transparent;
+        width: 100%;
+    }
+    .overlaycc1 h1{
+        opacity: 0;
+    }
+    .Event{
+        margin-top: 1rem;
+        width: 100%;
+        border-bottom: 0.1rem solid   #423f3b;
+        border-top: 0.1rem  solid #423f3b;
+    }
+    .Event1{
+        position: absolute;
+        top:19.3rem;
+        background-color: #f0431c;
+        color:#0D0D0D;
+        width: 100%;
+        transform: scaleY(0%);
+        transform-origin: center center;
+        transition: all ease 0.4s;
+    }
+    .Event1 h2{
+        font-family: all;
+        font-size: 3rem;
+        letter-spacing: 0.3rem;
+        text-transform: uppercase;
+        font-weight: 200; 
+        margin-left: 1rem; 
+        margin-top: 1.4rem;
+    
+    }
+    .overlaye1{
+        position: absolute;
+        top:19.4rem;
+    background:transparent;
+        width: 100%;
+    }
+    .overlaye1 h1{
+        opacity: 0;
+        font-size: 6.5rem;
+    }
+}
