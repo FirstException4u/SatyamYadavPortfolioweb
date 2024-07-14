@@ -32,7 +32,6 @@ overlay4.addEventListener("mouseleave", ()=>{
     dsa1.style.transform="scaleY(0%)"
   })
 }
-
 function projects(){
   const overlaypor1=document.querySelector(".overlaypro1");
   const pro1=document.querySelector(".laypro1");
@@ -56,7 +55,7 @@ function projects(){
     gsap.to(overlaypor1, {
       opacity: 1,
       ease: Power3,
-      top: diff+"vh",
+      top: diff + "vh",
       left: dets.clientX,
       rotate: gsap.utils.clamp(-20, 20, diffrot * 0.5),
     });
@@ -80,6 +79,7 @@ function projects(){
     var diff = dets.clientY - pro2.getBoundingClientRect().top;
     diffrot1 = dets.clientX - rotate1;
     rotate1 = dets.clientX;
+ 
     gsap.to(overlaypor2, {
       opacity: 1,
       ease: Power3,

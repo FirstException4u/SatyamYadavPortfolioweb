@@ -337,14 +337,15 @@ body, html {
     margin-right: 45rem;
 }
 .overlaypro1{
-    height: 23rem;
-    width:23rem;
+    height: 22rem;
+    width:22rem;
     padding: 1rem 1rem;
     position: absolute;
     background: #f0431c;
     border-radius: 1rem;
     box-shadow: 5px 5px 30px #f0431c;
-    opacity: 0;
+    opacity: 1;
+    z-index:1;
 }
 .overlaypro1 h2{
     font-family: all;
@@ -369,6 +370,7 @@ body, html {
     position: absolute;
     top:13.6rem;
     background: transparent;
+    z-index: 3;
 }
 .laypro1 h1{
     font-family: all;
@@ -387,8 +389,9 @@ body, html {
     background: #f0431c;
     border-radius: 1rem;
     box-shadow: 5px 5px 30px #f0431c;
-    opacity: 0;
+    opacity: 1;
     top:22rem;
+    z-index: 2;
 
 }
 .overlaypro2 h2{
@@ -414,6 +417,7 @@ body, html {
     width: 100%;
     position: absolute;
     background: transparent;
+    z-index: 3;
    
 }
 .laypro2 h1{
