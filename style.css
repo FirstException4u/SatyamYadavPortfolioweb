@@ -306,6 +306,7 @@ body, html {
     width: 100%;
     border-bottom: 0.1rem solid   #423f3b;
     border-top: 0.1rem  solid #423f3b;
+    position: relative;
 }
 .pro1 h1{
     font-family: all;
@@ -319,6 +320,7 @@ body, html {
     width: 100%;
     border-bottom: 0.1rem solid   #423f3b;
     border-top: 0.1rem  solid #423f3b;
+    position: relative;
 }
 .pro2 h1{
     font-family: all;

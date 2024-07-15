@@ -55,13 +55,13 @@ function projects(){
     gsap.to(overlaypor1, {
       opacity: 1,
       ease: Power3,
-      top: diff + "vh",
+      top: diff,
       left: dets.clientX,
       rotate: gsap.utils.clamp(-20, 20, diffrot * 0.5),
     });
   });
 
-  
+  const pro12=document.querySelector(".pro2");
   const overlaypor2=document.querySelector(".overlaypro2");
   const pro2=document.querySelector(".laypro2");
   var rotate1 = 0;
@@ -74,16 +74,18 @@ function projects(){
       duration: 0.5,
     });
   });
+  console.log(pro12.getBoundingClientRect());
 
   pro2.addEventListener("mousemove", function (dets) {
-    var diff = dets.clientY - pro2.getBoundingClientRect().top;
+    var diff = dets.clientY - pro12.getBoundingClientRect().top + pro12.getBoundingClientRect().height;
+    console.log(diff);
     diffrot1 = dets.clientX - rotate1;
     rotate1 = dets.clientX;
  
     gsap.to(overlaypor2, {
       opacity: 1,
       ease: Power3,
-      top: diff + "vh",
+      top: diff,
       left: dets.clientX,
       rotate: gsap.utils.clamp(-20, 20, diffrot1 * 0.5),
     });
