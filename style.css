@@ -133,7 +133,8 @@ body, html {
 .aboutmecontent{
     height: 100%;
     width: 60%;
-    color: #aca59b;  
+    color: #4f4c4c;
+      
 } 
 .aboutme h2{
     font-family: all;
@@ -142,10 +143,11 @@ body, html {
     text-transform: uppercase;
     font-weight: 600;
     margin-bottom: 2rem;
+    color:#d8d5d5
 }
 .aboutme h1{
     font-family: all;
-    font-size: 4rem;
+    font-size: 4.2vw;
     letter-spacing: 0.4rem;
     text-transform: uppercase;
     font-weight: bolder; 
@@ -163,7 +165,6 @@ body, html {
     justify-content: center;
     min-height: 100%;
     width: 100%;
-   padding-top: 15rem;
 }
 .skills-content{
     height: 100%;
@@ -190,111 +191,148 @@ body, html {
 } 
 .frontend{
     width: 100%;
+    height: 100%;
     border-bottom: 0.1rem solid   #423f3b;
     border-top: 0.1rem  solid #423f3b;
+    position: relative;
   
 }
 .backend{
     width: 100%;
+    height: 100%;
     border-bottom: 0.1rem solid   #423f3b;
     border-top: 0.1rem  solid #423f3b;
+    position: relative;
+  
 }
 .database{
     width: 100%;
+    height: 100%;
     border-bottom: 0.1rem solid   #423f3b;
     border-top: 0.1rem  solid #423f3b;
+    position: relative;
+   
 }
 .dsa{
     width: 100%;
+    height: 100%;
     border-bottom: 0.1rem solid   #423f3b;
     border-top: 0.1rem  solid #423f3b;
+    position: relative;
 }
 .frontend1{
     position: absolute;
-    top:4.5rem;
     background-color: #f0431c;
     color:#0D0D0D;
     width: 100%;
+    height:100%;
     transform: scaleY(0%);
     transform-origin: center center;
     transition: all ease 0.4s;
+    top:0;
+    display: flex;
+    align-items: center;
+    padding-left: 18.5rem;
+    gap:5vw;
 }
 .overlay1{
     position: absolute;
-    top:4.5rem;
     background-color:transparent;
     width: 100%;
+    height: 100%;
+    z-index: 3;
+    top:0;
 }
 .overlay1 h1{
    opacity: 0;
 }
 .backend1{
     position: absolute;
-    top:11.76rem;
+    top:0;
     background-color: #f0431c;
     color:#0D0D0D;
     width: 100%;
+    height: 100%;
     transform: scaleY(0%);
     transform-origin: center center;
     transition: all ease 0.4s;
+    display: flex;
+    align-items: center;
+    padding-left: 18.5rem;
+    gap:5vw;
 }
 .overlay2{
     position: absolute;
-    top:11.76rem;
     background-color:transparent;
     width: 100%;
+    height: 100%;
+    z-index: 3;
+    top:0;
 }
 .overlay2 h1{
    opacity: 0; 
 }
 .database1{
     position: absolute;
-    top:19rem;
     background-color: #f0431c;
     color:#0D0D0D;
     width: 100%;
+    height:100%;
     transform: scaleY(0%);
     transform-origin: center center;
     transition: all ease 0.4s;
+    top:0;
+    display: flex;
+    align-items: center;
+    padding-left: 18.5rem;
+    gap:5vw;
 }
 .overlay3{
     position: absolute;
-    top:19rem;
     background-color:transparent;
     width: 100%;
+    height: 100%;
+    z-index: 3;
+    top:0;
 }
 .overlay3 h1{
    opacity: 0;
 }
 .dsa1{
     position: absolute;
-   top:26.3rem;
     background-color: #f0431c;
     color:#0D0D0D;
     width: 100%;
+    height:100%;
     transform: scaleY(0%);
     transform-origin: center center;
     transition: all ease 0.4s;
+    top:0;
+    display: flex;
+    align-items: center;
+    padding-left: 18.5rem;
+    gap:5vw;
 }
 .overlay4{
     position: absolute;
-    top:26.3rem;
     background-color:transparent;
     width: 100%;
+    height: 100%;
+    z-index: 3;
+    top:0;
 }
 .overlay4 h1{
    opacity: 0;
 }
 .project{
     background-color: #0D0D0D;
-    height: 100%;
+    min-height: 50vh;
     width: 100%;
-    padding-top: 5rem;
     overflow: hidden;
 }
 .projectcontent{
     width: 100%;
-    height: 100%;
+    min-height: 90vh;
     color: #aca59b; 
     display: flex;
     align-items: center;
@@ -321,6 +359,7 @@ body, html {
     border-bottom: 0.1rem solid   #423f3b;
     border-top: 0.1rem  solid #423f3b;
     position: relative;
+    margin-top: 8vw;
 }
 .pro2 h1{
     font-family: all;
@@ -370,7 +409,6 @@ body, html {
 .laypro1{
     width: 100%;
     position: absolute;
-    top:13.6rem;
     background: transparent;
     z-index: 3;
 }
@@ -415,12 +453,10 @@ body, html {
     color:black;
 }
 .laypro2{
-    top:26rem;
     width: 100%;
     position: absolute;
     background: transparent;
     z-index: 3;
-   
 }
 .laypro2 h1{
     font-family: all;
@@ -432,20 +468,20 @@ body, html {
     opacity: 0;
 }
 .achievement{
-    background-color: #0D0D0D;
     display: flex;
     align-items: center;
     justify-content: center;
-    min-height: 100%;
+    min-height: 100vh;
     width: 100%;
-   padding-top: 15rem;
+  padding-top: 2vw;
+  padding-bottom: 2vw;
+  background-color: #0D0D0D;
+ 
 }
 .achievementcontent{
-    height: 100%;
+    min-height: 100vh;
     width: 100%;
     color: #aca59b;
-    position: relative;
-  
 }
 .achievementcontent h2{
 font-family: all;
@@ -458,28 +494,31 @@ margin-left: 19rem;
 }
 .achievementcontent h1{
     font-family: all;
-    font-size: 6rem;
+    font-size: 5rem;
     letter-spacing: 0.4rem;
     text-transform: uppercase;
     font-weight: bolder; 
     margin-left: 18.5rem;
-    margin-top: 5rem;
-    margin-bottom: 5rem;
+    margin-top: 5vw;
+    margin-bottom: 5vw;
 }
 .Codechef{
     width: 100%;
     border-bottom: 0.1rem solid   #423f3b;
     border-top: 0.1rem  solid #423f3b;
+    position: relative;
 }
 .Codechef1{
     position: absolute;
-    top:4.5rem;
+    top:0;
     background-color: #f0431c;
     color:#0D0D0D;
     width: 100%;
+    height: 100%;
     transform: scaleY(0%);
     transform-origin: center center;
     transition: all ease 0.4s;
+   
 }
 .Codechef1 h2{
     font-family: all;
@@ -488,14 +527,13 @@ margin-left: 19rem;
     text-transform: uppercase;
     font-weight: bolder; 
     margin-left: 18.5rem;
-    margin-top: 3rem;
-
+    padding-top: 1rem;
 }
 .overlaycc1{
     position: absolute;
-    top:4.5rem;
-    background-color:transparent;
     width: 100%;
+    height: 100%;
+    top:0;
 }
 .overlaycc1 h1{
     opacity: 0;
@@ -507,39 +545,44 @@ margin-left: 19rem;
 }
 .Event{
     margin-top: 2rem;
+    height:100%;
     width: 100%;
     border-bottom: 0.1rem solid   #423f3b;
     border-top: 0.1rem  solid #423f3b;
+    position: relative;
+    padding: 0 0;
 }
 .Event1{
     position: absolute;
-    top:23.8rem;
+    top:0;
     background-color: #f0431c;
     color:#0D0D0D;
     width: 100%;
+    height:100%;
     transform: scaleY(0%);
     transform-origin: center center;
     transition: all ease 0.4s;
+    display: flex;
+    flex-direction: column;
+    padding-top: .2vw;
 }
 .Event1 h2{
     font-family: all;
-    font-size: 4.6rem;
+    font-size: 3.7rem;
     letter-spacing: 0.3rem;
     text-transform: uppercase;
-    font-weight: 100; 
-    margin-left: 18.5rem;
-    margin-top: 4rem;
+    font-weight: bolder; 
 }
 .overlaye1{
     position: absolute;
-    top:21.7rem;
-   background:transparent;
+   top:0;
     width: 100%;
+    height: 100%;
 }
 .overlaye1 h1{
     opacity: 0;
     font-family: all;
-    font-size: 7.6rem;
+    font-size: 2rem;
     letter-spacing: 0.4rem;
     text-transform: uppercase;
     font-weight: bolder; 
@@ -665,7 +708,6 @@ margin-left: 19rem;
     .aboutmecontent{
         height: 100%;
         width: 100%;
-        color: #aca59b;
         padding: 0 2rem;  
     } 
     .aboutme h2{
@@ -678,7 +720,7 @@ margin-left: 19rem;
     }
     .aboutme h1{
         font-family: all;
-        font-size: 2.5rem;
+        font-size:11vw;
         text-transform: uppercase;
         font-weight: bolder; 
         letter-spacing: 0rem;
@@ -722,80 +764,78 @@ margin-left: 19rem;
         letter-spacing: 0.1rem;
         margin-left:1.8rem;
     } 
-    .frontend1{
+    .dsa1{
         position: absolute;
-        top:4.2rem;
         background-color: #f0431c;
         color:#0D0D0D;
         width: 100%;
+        height:100%;
         transform: scaleY(0%);
         transform-origin: center center;
         transition: all ease 0.4s;
+        top:0;
+        display: flex;
+        align-items: center;
+        padding-left: 2rem;
+        gap:5vw;
     }
-    .overlay1{
+    .database1{
         position: absolute;
-        top:4.2rem;
-        background-color:transparent;
+        background-color: #f0431c;
+        color:#0D0D0D;
         width: 100%;
+        height:100%;
+        transform: scaleY(0%);
+        transform-origin: center center;
+        transition: all ease 0.4s;
+        top:0;
+        display: flex;
+        align-items: center;
+        padding-left: 2rem;
+        gap:5vw;
+    }
+    .backend1{
+        position: absolute;
+        top:0;
+        background-color: #f0431c;
+        color:#0D0D0D;
+        width: 100%;
+        height: 100%;
+        transform: scaleY(0%);
+        transform-origin: center center;
+        transition: all ease 0.4s;
+        display: flex;
+        align-items: center;
+        padding-left: 2rem;
+        gap:5vw;
+    }
+    .frontend1{
+        position: absolute;
+        background-color: #f0431c;
+        color:#0D0D0D;
+        width: 100%;
+        height:100%;
+        transform: scaleY(0%);
+        transform-origin: center center;
+        transition: all ease 0.4s;
+        top:0;
+        display: flex;
+        align-items: center;
+        padding-left: 2rem;
+        gap:5vw;
     }
     .overlay1 h1{
        opacity: 0;
     }
-    .backend1{
-        position: absolute;
-        top:8.3rem;
-        background-color: #f0431c;
-        color:#0D0D0D;
-        width: 100%;
-        transform: scaleY(0%);
-        transform-origin: center center;
-        transition: all ease 0.4s;
-    }
-    .overlay2{
-        position: absolute;
-        top:8.3em;
-        background-color:transparent;
-        width: 100%;
-    }
+
     .overlay2 h1{
        opacity: 0; 
     }
-    .database1{
-        position: absolute;
-        top:12.4rem;
-        background-color: #f0431c;
-        color:#0D0D0D;
-        width: 100%;
-        transform: scaleY(0%);
-        transform-origin: center center;
-        transition: all ease 0.4s;
-    }
-    .overlay3{
-        position: absolute;
-        top:12.4rem;
-        background-color:transparent;
-        width: 100%;
-    }
+
     .overlay3 h1{
        opacity: 0;
     }
-    .dsa1{
-        position: absolute;
-       top:16.5rem;
-        background-color: #f0431c;
-        color:#0D0D0D;
-        width: 100%;
-        transform: scaleY(0%);
-        transform-origin: center center;
-        transition: all ease 0.4s;
-    }
     
-    .overlay4{
-        position: absolute;
-        top:16.5rem;
-        background-color:transparent;
-        width: 100%;
-    }
     .overlay4 h1{
        opacity: 0;
     }
@@ -812,7 +852,7 @@ margin-left: 19rem;
         color: #aca59b; 
         display: flex;
         align-items: center;
-        justify-content: space-around;
+        justify-content: space-evenly;
         flex-direction: column;
         position: relative;
     }
@@ -855,7 +895,7 @@ margin-left: 19rem;
         width:15rem;
         padding: 1rem 1rem;
         position: absolute;
-        background: #b3afa9;
+        background: #f0431c;
         border-radius: 1rem;
         box-shadow: 5px 5px 30px #b3afa9;
         opacity: 0;
@@ -867,7 +907,7 @@ margin-left: 19rem;
         letter-spacing: 0.3rem;
         text-transform: uppercase;
         font-weight: 600;
-        color: #423f3b;
+        color:black;
         margin-top: 1.7rem;;
         margin-bottom: 1.3rem;
     }
@@ -877,13 +917,12 @@ margin-left: 19rem;
         letter-spacing: 0.3rem;
         text-transform: uppercase;
         font-weight: bolder; 
-        color: tomato;
+        color: black;
     }
     .laypro1{
         width: 100%;
         position: absolute;
-        top:40vh;
-        background:transparent;
+      
     }
     .laypro1 h1{
         font-family: all;
@@ -898,7 +937,7 @@ margin-left: 19rem;
         width:15rem;
         padding: 1rem 1rem;
         position: absolute;
-        background: #b3afa9;
+        background: #f0431c;
         border-radius: 1rem;
         box-shadow: 5px 5px 30px #b3afa9;
         opacity: 0;
@@ -910,7 +949,7 @@ margin-left: 19rem;
         letter-spacing: 0.3rem;
         text-transform: uppercase;
         font-weight: 600;
-        color: #423f3b;
+        color: black;
         margin-top: 1.7rem;;
         margin-bottom: 1.3rem;
     }
@@ -920,13 +959,12 @@ margin-left: 19rem;
         letter-spacing: 0.3rem;
         text-transform: uppercase;
         font-weight: bolder; 
-        color: tomato;
+        color: black;
     }
     .laypro2{    
         width: 100%;
         position: absolute;
-        top:74vh;
-        background: transparent;
+        
     }
     .laypro2 h1{
         font-family: all;
@@ -941,64 +979,68 @@ margin-left: 19rem;
         display: flex;
         align-items: center;
         justify-content: center;
-        min-height: 100%;
+        flex-direction: column;
+        min-height: 50vh;
         width: 100%;
        padding-top:0rem;
        padding-bottom: 2rem;
     }
     .achievementcontent{
-        height: 100%;
+        min-height: 60vh;
         width: 100%;
         color: #aca59b;
        position: relative;
+       display: flex;
+       flex-direction: column;
+       justify-content: space-evenly;
     }
-    .achievementcontent h2{
+    .achievementcontent  h2{
         font-family: all;
         font-size: 1.8rem;
         letter-spacing: 0.4rem;
         text-transform: uppercase;
         font-weight: 600;
-        margin-bottom: 2rem;
-        margin-left:2rem ;
+        margin-bottom: 0rem;
+        margin-left:1.8rem;
     }
     .achievementcontent h1{
         font-family: all;
-        font-size: 3.3rem;
+        font-size: 13vw;
         text-transform: uppercase;
         font-weight: bolder; 
         letter-spacing: 0.1rem;
         margin-left:1.8rem;
-       
     }
     .Codechef{
         width: 100%;
         border-bottom: 0.1rem solid   #423f3b;
         border-top: 0.1rem  solid #423f3b;
+        position: relative;
     }
     .Codechef1{
         position: absolute;
-        top:4.2rem;
         background-color: #f0431c;
         color:#0D0D0D;
         width: 100%;
+        height: 100%;
         transform: scaleY(0%);
         transform-origin: center center;
         transition: all ease 0.4s;
+        display: flex;
     }
     .Codechef1 h2{
         font-family: all;
-        font-size: 1.3rem;
+        font-size: 1rem;
         letter-spacing: 0.3rem;
         text-transform: uppercase;
         font-weight: bolder; 
         margin-left: 1rem; 
-        margin-top: 3.5rem;
+        margin-top: 0;
     }
     .overlaycc1{
         position: absolute;
-        top:4.3rem;
-        background: transparent;
         width: 100%;
+        height: 100%;
     }
     .overlaycc1 h1{
         opacity: 0;
@@ -1008,32 +1050,36 @@ margin-left: 19rem;
         width: 100%;
         border-bottom: 0.1rem solid   #423f3b;
         border-top: 0.1rem  solid #423f3b;
+        position: relative;
+       
     }
     .Event1{
         position: absolute;
-        top:19.3rem;
         background-color: #f0431c;
         color:#0D0D0D;
         width: 100%;
         transform: scaleY(0%);
         transform-origin: center center;
         transition: all ease 0.4s;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: row;
     }
     .Event1 h2{
         font-family: all;
-        font-size: 3rem;
+        font-size: 5vw;
         letter-spacing: 0.3rem;
         text-transform: uppercase;
-        font-weight: 200; 
+        font-weight: bolder; 
         margin-left: 1rem; 
-        margin-top: 1.4rem;
-    
+       margin-top: 0;
     }
     .overlaye1{
         position: absolute;
-        top:19.4rem;
-    background:transparent;
         width: 100%;
+        height: 100%;
+        background-color: transparent;
     }
     .overlaye1 h1{
         opacity: 0;

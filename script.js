@@ -34,7 +34,7 @@ overlay4.addEventListener("mouseleave", ()=>{
 }
 function projects(){
   const overlaypor1=document.querySelector(".overlaypro1");
-  const pro1=document.querySelector(".laypro1");
+  const pro1=document.querySelector(".pro1");
  
     var rotate = 0;
     var diffrot = 0;
@@ -51,7 +51,6 @@ function projects(){
     var diff = dets.clientY - pro1.getBoundingClientRect().top;
     diffrot = dets.clientX - rotate;
     rotate = dets.clientX;
-    
     gsap.to(overlaypor1, {
       opacity: 1,
       ease: Power3,
@@ -63,11 +62,11 @@ function projects(){
 
   const pro12=document.querySelector(".pro2");
   const overlaypor2=document.querySelector(".overlaypro2");
-  const pro2=document.querySelector(".laypro2");
+
   var rotate1 = 0;
   var diffrot1 = 0;
   
-  pro2.addEventListener("mouseleave", function (dets) {
+  pro12.addEventListener("mouseleave", function (dets) {
     gsap.to(overlaypor2, {
       opacity: 0,
       ease: Power3,
@@ -76,9 +75,8 @@ function projects(){
   });
   console.log(pro12.getBoundingClientRect());
 
-  pro2.addEventListener("mousemove", function (dets) {
-    var diff = dets.clientY - pro12.getBoundingClientRect().top + pro12.getBoundingClientRect().height;
-    console.log(diff);
+  pro12.addEventListener("mousemove", function (dets) {
+    var diff = dets.clientY - pro12.getBoundingClientRect().top + pro1.getBoundingClientRect().top
     diffrot1 = dets.clientX - rotate1;
     rotate1 = dets.clientX;
  
@@ -110,7 +108,31 @@ function achievement(){
     })
     
 }
-
+function aboutme(){
+  const tl=gsap.timeline({scrollTrigger:{
+    trigger:".aboutme",
+    start: "top top",
+    end: "bottom top", 
+    scrub:3,
+    pin:true,
+  }})
+  const text=document.querySelector(".aboutmecontent h1").innerHTML;
+  const alltext=text.split("");
+  var clutter="";
+  alltext.forEach((char,i)=>{
+   clutter+=`<span>${char}</span>`
+  })
+  document.querySelector(".aboutmecontent h1").innerHTML=clutter;
+  const allspan=document.querySelectorAll(".aboutme h1 span");
+  allspan.forEach((char)=>{
+    tl.to(char,{
+      color:"#d8d5d5"
+    })
+  })
+  console.log(allspan,"#c8c8c8","")
+ 
+}
+aboutme()
 skills()
 projects()
 achievement()
